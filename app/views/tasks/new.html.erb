@@ -2,8 +2,9 @@
 
 <%= form_for(@task) do |f| %>
     <%= f.label :content, 'タスク' %>
-    <%= f.text_field : content %>
+    <%= f.text_field :content %>
     
     <%= f.submit '追加' %>
 <% end %>
+
 <%= link_to 'リストに戻る', tasks_path %>
