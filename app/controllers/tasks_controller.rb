@@ -27,7 +27,7 @@ class TasksController < ApplicationController
         @task = Task.find(params[:id])
     end
     
-    def uppdate 
+    def update 
         @task = Task.find(params[:id])
         
         if @task.update(task_params)
